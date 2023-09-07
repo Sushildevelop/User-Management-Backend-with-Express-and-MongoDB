@@ -1,0 +1,58 @@
+npm init -y
+npm i express mongoose dotenv cors
+package.jso = main: server.js
+             scripts: "start": "node server.js"
+             "dev": "nodemon server.js"
+create -> app.js
+create -> server.js
+create -> .env     
+
+app.js -> require('dotenv').config();
+
+server.js -> const app=require('./app.js')
+             app.listen
+
+app.js -> app.get 
+
+database connection
+folder -> config -> db.js 
+db.js -> mongoose 
+.env -> MONGODB_URL
+
+app.js-> const connectToDB=require('./config/db.js)
+connectToDb()
+
+// Express Middleware
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
+app.use(cors())
+
+create folder -> Model 
+ Model -> userModel.js
+ const userSchema = new mongoose.Schema({
+    name:{
+
+    }
+ })
+
+Create folder Controller
+Controller -> UserController.js
+
+create folder routes 
+routes-> userRoutes.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
